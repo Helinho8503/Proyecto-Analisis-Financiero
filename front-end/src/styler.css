@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #EDF1F7;
+}
+#container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginbox{
+    border-radius: 10px;
+    display: flex;
+    width: 820px;
+    height: 583px;
+    background-color: #000;
+    color: #fff;
+    box-sizing: border-box;
+    box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);
+}
+.col1{
+    flex: 0.5;
+    background-image: url(img/men2.jpg);
+    background-size: cover;
+    background-color: #275ABD;
+    background-position: -200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.col2{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.col2 h1{
+    text-align: center;
+    font-size: 30px;
+}
+#uno{
+    margin-top: 2vh;
+}
+.col2 ul{
+    margin-left: 5vh;
+    list-style: none; 
+
+}
+.col2 label{
+    text-align: initial;
+    font-weight: 500;
+}
+.col2 input{
+
+    border-radius: 2.5px;
+    border: none;
+    outline: none;
+    background-color: rgb(233, 233, 233);
+    width: 80%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+.col2 input:focus{
+    border: 1px solid #000;
+}
+.col2 img{
+    padding: 1vh;
+    border: solid 2px #DBDBDB;
+    border-radius: 100vh;
+    margin-left: 13vh;
+    margin-bottom: 0.5vh;;
+    text-align: center;
+}
+
+.col2 button{
+    background-color: #275ABD;
+    color: #fff;
+    cursor: pointer;;
+    margin-top: 1vh;
+    margin-left: 4.8vh;
+    border-radius: 2.5px;
+    border: none;
+    outline: none;
+    width: 70%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    font-size: 16px;
+       
+}
+.col2 button:hover{
+    transition: 1s;
+    background-color: #000;
+    color: yellow;
+}
+.col2 a{
+    text-decoration: none;
+    color: inherit
+}
+#forgot{
+    margin-left: 8vh;
+}

@@ -28,8 +28,8 @@ public class TransaccionControlador {
     }
   
     @GetMapping
-    public List<Transaccion> obtenerUsuarios(@RequestParam String tipo) {
-      return servicio.obtenerTransaccionesXTipo(tipo);
+    public List<Transaccion> obtenerUsuarios(@RequestParam int id, String tipo) {
+      return servicio.obtenerTransaccionesXTipo(id,tipo);
     }
   
     @GetMapping("/{id}")

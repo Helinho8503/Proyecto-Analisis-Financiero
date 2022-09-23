@@ -21,12 +21,13 @@ public class TransaccionServicio {
         .buildSessionFactory();
   }
 
-  public List<Transaccion> obtenerTransaccionesXTipo(String tipo) {
+  public List<Transaccion> obtenerTransaccionesXTipo(int id, String tipo) {
     List<Transaccion> transacciones = new ArrayList<Transaccion>();
     Session session = factory.openSession();
     session.beginTransaction();
     try {
-      transacciones = session.createQuery("from Transaccion where tipo = :n", Transaccion.class)
+      transacciones = session.createQuery("from Transaccion where id_usuario = :m and tipo = :n", Transaccion.class)
+      .setParameter("m", id)
       .setParameter("n", tipo).list();
     } catch (Exception e) {
       e.printStackTrace();

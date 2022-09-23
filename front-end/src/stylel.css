@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #EDF1F7;
+}
+#container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginbox{
+    border-radius: 10px;
+    display: flex;
+    width: 820px;
+    height: 583px;
+    background-color: #000;
+    color: #fff;
+    box-sizing: border-box;
+    box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);
+}
+.col1{
+    flex: 0.5;
+    background-image: url(img/men2.jpg);
+    background-size: cover;
+    background-color: #275ABD;
+    background-position: -200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.col2{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+#uno{
+    margin-top: 2vh;
+}
+.col2 ul{
+    margin-left: 5vh;
+    list-style: none; 
+
+}
+.col2 label{
+    text-align: initial;
+    font-weight: 500;
+}
+.col2 input{
+    margin-left: 4.25vh; 
+    border-radius: 0.9vh;
+    border: solid 1.5px #000;
+    width: 80%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    font-size: 16px;
+    outline:#275ABD 1px solid
+}
+.col2 input:focus{
+    border: 1px solid #000;
+}
+
+.col2 button{
+    cursor: pointer;
+    margin-top: 1vh;
+    margin-left: 6.25vh;
+    border-radius: 2.5px;
+    border: none;
+    outline: none;
+    width: 60%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    font-size: 16px;
+       
+}
+.col2 a{
+    position: bottom;
+    margin-left: 5.3vh;
+    text-decoration: none;
+    color: inherit
+}
+.col2 img{
+    padding: 1vh;
+    border: solid 2px #DBDBDB;
+    border-radius: 100vh;
+    margin-left: 16vh;
+    margin-top: 5.5vh;
+    margin-bottom: 0.5vh;;
+    text-align: center;
+}
+#ttext{
+    text-align: center;
+    font-size: 13px;
+    margin-left: 4vh;
+    margin-bottom: 2.5vh;
+    width:35vh;
+}
+#singin{
+    border :none;
+    margin-bottom: 10.5vh;
+    margin-left: 8.5vh;
+    border-radius: 0.75vh;
+    background-color: #275ABD;
+    color: #fff;
+}
+
+#forgot{
+    margin-left: 8vh;
+}

@@ -28,17 +28,20 @@ public class TransaccionControlador {
     }
   
     @GetMapping
+    @CrossOrigin("*")
     public List<Transaccion> obtenerUsuarios(@RequestParam int id, String tipo) {
       return servicio.obtenerTransaccionesXTipo(id,tipo);
     }
   
     @GetMapping("/{id}")
+    @CrossOrigin("*")
     public Transaccion obtenerTransaccion(@PathVariable(name = "id") int id) {
       return servicio.obtenerTransaccion(id);
     }
   
   
     @PostMapping
+    @CrossOrigin("*")
     public String crearTransaccion(@RequestBody Transaccion transaccion) {
       return servicio.crearTransaccion(transaccion);
     }

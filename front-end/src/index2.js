@@ -1,5 +1,6 @@
 const url = "http://localhost:8080/transacciones"
 
+
 function mostrar_transacciones (transacciones) {
     const tabla = document.getElementById('tbody')
     let tbody = ''
@@ -23,7 +24,7 @@ function mostrar_transacciones (transacciones) {
     const search = window.location.search
     const urlsearch = new URLSearchParams(search)
     const id = urlsearch.get("id")
-    const resp = await fetch(`${url}?id=${id}&tipo=Ingreso`)
+    const resp = await fetch(`${url}?id=${id}&tipo=Egreso`)
     const transacciones = await resp.json()
     return transacciones
   }
@@ -36,7 +37,7 @@ function mostrar_transacciones (transacciones) {
     alert(text)
     main()
   }
-
+  
   async function main () {
     const transacciones = await obtener_transacciones(url)
     mostrar_transacciones(transacciones)
@@ -44,7 +45,7 @@ function mostrar_transacciones (transacciones) {
     const urlsearch = new URLSearchParams(search)
     const id = urlsearch.get("id")
     const referencia = document.getElementById('linkindex')
-    referencia.setAttribute('href',"../pages/index2.html?id="+id) 
+    referencia.setAttribute('href',"../pages/index.html?id="+id) 
   }
   
   main()

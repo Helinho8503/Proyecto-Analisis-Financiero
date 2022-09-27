@@ -28,17 +28,20 @@ public class UsuarioControlador {
     }
   
     @GetMapping
+    @CrossOrigin("*")
     public List<Usuario> obtenerUsuarios() {
       return servicio.obtenerUsuarios();
     }
   
     @GetMapping("/{id}")
+    @CrossOrigin("*")
     public Usuario obtenerUsuario(@PathVariable(name = "id") int id) {
       return servicio.obtenerUsuario(id);
     }
   
   
     @PostMapping
+    @CrossOrigin("*")
     public String crearUsuario(@RequestBody Usuario usuario) {
       return servicio.crearUsuario(usuario);
     }

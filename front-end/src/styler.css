@@ -28,7 +28,7 @@ body{
 }
 .col1{
     flex: 0.5;
-    background-image: url(img/men2.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2021/02/07/19/46/calculator-5992492_960_720.png);
     background-size: cover;
     background-color: #275ABD;
     background-position: -200px;

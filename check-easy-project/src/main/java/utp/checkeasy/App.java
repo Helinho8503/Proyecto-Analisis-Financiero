@@ -21,7 +21,7 @@ public class App
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/usuarios").allowedOrigins("*");
-                //registry.addMapping("/trasacciones").allowedOrigins("*");
+                registry.addMapping("/trasacciones").allowedOrigins("*");
             }
         };
     }

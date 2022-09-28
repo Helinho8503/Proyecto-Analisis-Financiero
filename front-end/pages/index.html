@@ -16,6 +16,11 @@
             <a id="linkindex">Ver egresos</a>
         </nav>
     </header>
+    <form onsubmit="getDataForm(event)" id ="ingresar_cantidad">
+        <input type="text" name="razon" id="razon" placeholder="Razón"> 
+        <input type="number" name="monto" id="monto" placeholder="Monto">
+        <button type="submit" id="singin" >Añadir</button> <br>
+    </form>
     <section id="container">
 
             <div class="col1">
@@ -45,11 +50,6 @@
                         </tr>
                     </tfoot>
                 </table>
-            </div>
-            <div id ="logint">
-                <input type="email" name="email" id="email" > 
-                <input type="password" name="password" id="password">
-                <button type="submit" id="singin" >Añadir</button> <br>
             </div>
     <script src="/src/index.js"></script>
 </body>

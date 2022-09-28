@@ -37,6 +37,40 @@ function mostrar_transacciones (transacciones) {
     main()
   }
 
+  function getDataForm (e) {
+    const search = window.location.search
+    const urlsearch = new URLSearchParams(search)
+    const id = urlsearch.get("id")
+    e.preventDefault()
+    const form = e.target
+    const transaccion = {
+      id_usuario: id,
+      razon: form.razon.value,
+      monto: form.monto.value,
+      tipo: "Ingreso"
+    }
+    sendDataCreate(transaccion)
+    clearInputs(form)
+  }
+
+  async function sendDataCreate (transaccion) {
+    const resp = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(transaccion)
+    })
+    const text = await resp.text()
+    alert(text)
+    main()
+  }
+
+  function clearInputs (form) {
+    form.razon.value = ""
+    form.monto.value = ""
+  }
+
   async function main () {
     const transacciones = await obtener_transacciones(url)
     mostrar_transacciones(transacciones)

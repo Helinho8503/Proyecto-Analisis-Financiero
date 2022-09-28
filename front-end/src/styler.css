@@ -28,14 +28,64 @@ body{
 }
 .col1{
     flex: 0.5;
-    background-image: url(https://cdn.pixabay.com/photo/2021/02/07/19/46/calculator-5992492_960_720.png);
     background-size: cover;
     background-color: #275ABD;
     background-position: -200px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+#slider{
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    overflow: hidden;
+}
+#slider ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in;
+}
+#slider li{
+    width: 100%;
+    list-style: none;
+    
+}
+#slider img{
+    width: 100%;
+}
+#calcu{
+    width: 90%;
+    height: 60vh;
+}
 
+@keyframes cambio{
+    0%{
+        margin-left: 0;
+    }
+    20%{
+        margin-left: 0%;
+    }
+    25%{
+        margin-left: -100%;
+    }
+    45%{
+        margin-left: -100%;
+    }
+    50%{
+        margin-left: -200%;
+    }
+    70%{
+        margin-left: -200%;
+    }
+    75%{
+        margin-left: -200%;
+    }
+    100%{
+        margin-left: -200%;
+    }
+}
 .col2{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -109,6 +159,7 @@ body{
     color: yellow;
 }
 .col2 a{
+    margin-left: 4.75vh;
     text-decoration: none;
     color: inherit
 }

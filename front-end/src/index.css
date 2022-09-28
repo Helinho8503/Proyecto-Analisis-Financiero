@@ -21,13 +21,13 @@ body{
     flex: 0.05;
     margin: 1vh;
     border-radius: 2.25vh ;
-    background-image: url(https://cdn.pixabay.com/photo/2021/02/07/19/46/calculator-5992492_960_720.png);
     background-size: cover;
     background-color: #275ABD;
     background-position: -200px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+
 .sidebar ul{
     margin-top:  10px;
     margin-left: -30px;
@@ -38,6 +38,26 @@ body{
 .sidebar img
 {
     border-radius: 4vh;
+}
+.sidebar button{
+    border: none;
+    background-color: #275ABD;
+    width: 100%;
+}
+.sidebar button:hover{
+    transition: all 1s;
+    background-color: grey;
+    color: #000;
+}
+#selected{
+    font-weight: 600;
+}
+.sidebar a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    background-color: none;
+    
 }
 
 .col2{
@@ -51,35 +71,54 @@ body{
     list-style: none;
 }
 
-header nav a {
-	color: white;
-	text-decoration: none;
-	margin: 5 px;
-	margin-left: 10px;
-	margin-right: 10px;
-
+#btn-add{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 100%;
 }
 
-#titulo-formulario {
-	color: white;
-    margin-right: 10px;
+#modal::backdrop{
+    background-color: rgba(0, 0, 0, .55);
 }
 
-#Egresos{
-    cursor: pointer;
-    margin-top: 1vh;
-    margin-left: 6.25vh;
-    border-radius: 2.5px;
-    color: white;
+#modal{
+    margin-left: 72vh;
+    margin-top: 30.5vh;
+    background-color: #275ABD;
+    
+}
+#modal input{
     border: none;
-    outline: none;
-    background-color: #3726f1;
-    margin-right: 10px;
+    margin-left: 14vh;
+    margin-right: 14vh;
+    width: 35vh;
+    border-radius: 0.3vh;
+    height: 3vh;
     padding: 0 10px;
     font-size: 16px;
+    outline:#275ABD 1px solid
 }
-
-#ingresar_cantidad {
-    padding: 10px;
-    margin: 10px;
+#modal h1{
+    text-align: center;;
+    color: #EDF1F7;
+    font-weight:bold;
+}
+#btn_add_modal{
+    border: none;
+    margin-left: 28.5vh;
+    margin-right: 28.5vh;
+}
+#modal p{
+    text-align: center;;
+    color: #EDF1F7;
+    margin: 0;
+    margin-bottom: 2vh;
+}  
+#btn_cerra_modal{
+    margin-left: 60.3vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+#btn_add_modal{
+    padding: 1vh;
 }

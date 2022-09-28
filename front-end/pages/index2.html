@@ -7,30 +7,29 @@
     <title>EASY-CHECK</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" href="/src/index.css">
+    <link rel="stylesheet" href="../src/index.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-dark bg-primary">
-            <!-- Navbar content -->
-            <h2 id="titulo-formulario">Egresos</h2>
-            <a id="linkindex">Ver ingresos</a>
-        </nav>
-    </header>
-    <form onsubmit="getDataForm(event)" id ="ingresar_cantidad">
-        <input type="text" name="razon" id="razon" placeholder="Razón"> 
-        <input type="number" name="monto" id="monto" placeholder="Monto">
-        <button type="submit" id="singin" >Añadir</button> <br>
-    </form>
+    <dialog id="modal">
+        <button id="btn_cerra_modal">X</button> <br>
+        <h1>Diligencia nuevos Egresos</h1><br>
+        <input type="text" placeholder="Razón" name="" id=""><br><br>
+        <input type="number" placeholder="Cantidad" name="" id=""><br><br>
+        <button id="btn_add_modal">Añadir</button> <br><br>
+        <p>Asegurese bien de Diligenciar corectamente los campos a ingresar</p>
+        <p> Easy-Check 2022© </p>
+        </dialog>
     <section id="container">
 
             <div class="col1">
                 <div class="sidebar">
                     <ul>
                         <li><img src="/assets/SAPO.png" alt="Profile pic" width="60px" height="60px"></li>
-                        <br>
-                        </li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                        <li><button><a href="/pages/login.html">EXIT</a></button></li>
+                        <br><br><br>
+                        <li><button><a href="./index.html">Ingresos</a></button></li><br><br>
+                        <li><button><a href="./index2.html" id="selected">Egresos</a></button></li><br>
+                        </li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <li><button><a href="../pages/login.html">EXIT</a></button></li>
                     </ul>
                 </div>
             </div>
@@ -48,10 +47,14 @@
                         <tr>
                             <th>Razón</th>
                             <th>Cantidad</th>
+                            <th></th>
                         </tr>
                     </tfoot>
                 </table>
+                <button id="btn-add">+</button>
             </div>
-    <script src="/src/index2.js"></script>
+    </section>
+    <script src="/src/index.js"></script>
+    
 </body>
 </html>

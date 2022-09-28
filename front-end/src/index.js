@@ -1,4 +1,17 @@
 const url = "http://localhost:8080/transacciones"
+const btn_add_modal = document.querySelector("#btn-add");
+const btn_close_modal = document.querySelector("#btn_cerra_modal");
+const modal = document.querySelector("#modal");
+
+btn_add_modal.addEventListener("click",abrirmodal);
+btn_close_modal.addEventListener("click",cerrarmodal);
+
+function abrirmodal() {
+  modal.showModal();
+}
+function cerrarmodal() { 
+  modal.close();
+}
 
 function mostrar_transacciones (transacciones) {
     const tabla = document.getElementById('tbody')
